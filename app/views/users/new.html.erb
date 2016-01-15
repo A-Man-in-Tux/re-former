@@ -1,0 +1,36 @@
+<!-- form_for form  -->
+
+<%= form_for @user do |f| %>
+
+  <%= f.text_field :username, placeholder: "username" %><br>
+  <%= f.text_field :email, placeholder: "example@example.com" %><br>
+  <%= f.password_field :password %><br>
+  <%= f.submit "Create" %>
+  
+<% end %>
+
+
+<!-- form_tag form -->
+
+<!--<%= form_tag(users_path, method: "post") do %>
+  
+  Username: <%=text_field_tag(:username)%><br>
+  Email: <%=text_field_tag(:email)%><br>
+  Password: <%=password_field_tag(:password)%><br>
+  <%= submit_tag("Create")%>
+  
+<% end %>-->
+
+
+<!-- non rails form -->
+
+<!--<form action="<%= users_path %>" method="post" accept-charset="UTF-8">
+  
+  Username: <input type="text" name="user[username]"><br>
+  Email: <input type="text" name="user[email]"><br>
+  Password: <input type="password" name="user[password]"><br>
+  <input name="commit" type="submit" value="Create">
+  
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  
+</form>-->
